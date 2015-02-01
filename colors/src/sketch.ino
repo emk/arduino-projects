@@ -1,20 +1,27 @@
+// Based on http://fritzing.org/projects/full-color-led-random-color-generator
+// but we replace the random colors with smooth transitions.
+//
+// Unfortunately, driving this diode with PWM signals produces very visible
+// flashing and beats.  This can be improved using a filter circuit on each
+// of the color pins:
+// http://www.instructables.com/id/Analog-Output-Convert-PWM-to-Voltage/
 
-byte RedLED = 6; 
-byte GrnLED = 3; 
-byte BluLED = 5;
+byte RED_PIN = 6; 
+byte GREEN_PIN = 3; 
+byte BLUE_PIN = 5;
 
 void setup()
 {
-    pinMode(RedLED, OUTPUT);
-    pinMode(BluLED, OUTPUT);
-    pinMode(GrnLED, OUTPUT);
+    pinMode(RED_PIN, OUTPUT);
+    pinMode(GREEN_PIN, OUTPUT);
+    pinMode(BLUE_PIN, OUTPUT);
 }
 
 void rgb(byte c[])
 {
-    analogWrite(RedLED, 255-c[0]);
-    analogWrite(GrnLED, 255-c[1]);
-    analogWrite(BluLED, 255-c[2]);
+    analogWrite(RED_PIN, 255-c[0]);
+    analogWrite(GREEN_PIN, 255-c[1]);
+    analogWrite(BLUE_PIN, 255-c[2]);
 }
 
 void glide(byte b[], byte e[])
