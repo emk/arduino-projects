@@ -50,5 +50,17 @@ ino upload -m leonardo
 We specify the Arduino model `leonardo`, because that seems to work well
 with the Raspberry Pi.
 
+### Circuit diagrams
+
+Each of these projects should include a [Fritzing][] file with breadboard
+diagrams and circuit diagrams.  These are just working notes, so **use the
+circuit diagrams at your own risk**. In particular, the resistors are not
+necessary well-sized, and I may have made errors when translating things to
+electronic format.  Pay particular attention to your power leads, and make
+sure the Molex connectors are correctly oriented for your power source.
+It's entirely possible to fry your Arduino or other parts if you don't
+understand what's going on.
+
 [rgbled]: http://www.radioshack.com/t-1-3-4-5mm-full-color-led/2760028.html
 [Ino]: http://inotool.org/
+[Fritzing]: http://fritzing.org/home/
