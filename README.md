@@ -41,6 +41,13 @@ python get-pip.py
 sudo pip install ino
 ```
 
+Alterantively, if you want a more recent version of the Arduino tools, see
+these [Arduino 1.6 Raspberry Pi instructions][arduino16] and
+[this patched version of ino][inopr].
+
+[arduino16]: https://nicohood.wordpress.com/2015/01/24/installing-avr-gcc-4-8-1-and-arduino-ide-1-6-on-raspberry-pi/
+[inopr]: https://github.com/amperka/ino/pull/226
+
 Then, from inside a project directory, we can build and upload an image
 over USB:
 
