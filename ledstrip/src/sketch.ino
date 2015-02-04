@@ -1,10 +1,24 @@
-// RadioShack Tricolor LED Strip 2760339
+// RadioShack Tricolor LED Strip 2760339 TM1803
 //
-// THIS DOESN'T WORK.  It _almost_ works, but the GRGB::Black LEDs
-// show up as a medium-intensity red, and the pattern--while
-// semi-visible--tends to jump around out of order a lot.  I'm not
-// sure if this is because of a problem with the code, or because
-// I've partially fried my LED strip.  Oh, well.
+// THIS MUST BE COMPILED ON WINDOWS (or probably a Mac).
+//
+// To make this work, you will need:
+//
+//   - The FastLED 3.3 branch.  Failure to use this will result
+//     in problems with the animation timing.
+//   - An official Arduino distribution (NOT A LINUX PORT!) with the
+//     correct version of avr-gcc.  When working with the TM1803, you
+//     need to get the assembly language timings exactly correct or
+//     the colors will be wrong.
+//
+// If you want to test your strip, see ../working_firmware.hex for a
+// compiled firmware that shows animated white dots moving outward from the
+// the start of the strip.
+//
+// Honestly, you should just give up on this strip and buy an Adafruit
+// DotStar instead--it's cheaper, it offers per-LED control, and the update
+// frequency is much higher.  And it doesn't require precise
+// assembly-language timing loops.
 //
 // Partially inspired by:
 // http://www.instructables.com/id/Import-a-Code-Library-to-Arduino/

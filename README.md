@@ -10,6 +10,8 @@ models, you may need to change the pin numbers.
 * `colors`: Animate the colors of a Radio Shark
   [T-1 3/4 5MM FULL COLOR LED][rgbled] in a endless, gradual RGB loop using
   the PWM output pins.
+* `ledstrip`: A horrible RadioShack [tricolor LED strip][rsledstrip].  This
+  code must be compiled on Windows.  See the notes in the source.
 
 ### Developing Arduino code on Raspberry Pi
 
@@ -64,3 +66,4 @@ understand what's going on.
 [rgbled]: http://www.radioshack.com/t-1-3-4-5mm-full-color-led/2760028.html
 [Ino]: http://inotool.org/
 [Fritzing]: http://fritzing.org/home/
+[rsledstrip]: http://www.radioshack.com/radioshack-tricolor-led-strip/2760339.html
