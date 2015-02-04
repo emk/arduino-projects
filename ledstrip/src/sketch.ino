@@ -4,12 +4,17 @@
 //
 // To make this work, you will need:
 //
-//   - The FastLED 3.3 branch.  Failure to use this will result
+//   - In theory, the FastLED 3.0.3 release should work on Windows or
+//     MacOS.  But if you have problems with animation timing and
+//     stuttering, try FastLED 3.1 branch.  Failure to use this will result
 //     in problems with the animation timing.
 //   - An official Arduino distribution (NOT A LINUX PORT!) with the
-//     correct version of avr-gcc.  When working with the TM1803, you
-//     need to get the assembly language timings exactly correct or
-//     the colors will be wrong.
+//     correct version of avr-gcc.  When working with the TM1803, you need
+//     to get the assembly language timings exactly correct or the colors
+//     will be wrong.  If you use the wrong version of avr-gcc, your colors
+//     will all be wrong.
+//
+// Many thanks to focalintent for his help figuring this out.
 //
 // If you want to test your strip, see ../working_firmware.hex for a
 // compiled firmware that shows animated white dots moving outward from the
