@@ -1,3 +1,6 @@
 [submodule "radioshack_leds/lib/FastLED"]
 	path = radioshack_leds/lib/FastLED
 	url = https://github.com/FastLED/FastLED.git
+[submodule "dotstar_leds/lib/FastLED"]
+	path = dotstar_leds/lib/FastLED
+	url = https://github.com/FastLED/FastLED.git
