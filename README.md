@@ -10,8 +10,13 @@ models, you may need to change the pin numbers.
 * `colors`: Animate the colors of a Radio Shark
   [T-1 3/4 5MM FULL COLOR LED][rgbled] in a endless, gradual RGB loop using
   the PWM output pins.
-* `ledstrip`: A horrible RadioShack [tricolor LED strip][rsledstrip].  This
-  code must be compiled on Windows.  See the notes in the source.
+* `radioshack_leds`: A horrible RadioShack
+  [tricolor LED strip][rsledstrip].  This code must be compiled on Windows.
+  See the notes in the source.
+* `dotstar_leds`: A very nice LED strip from Adafruit.  These are a bit
+  picky about the power circuit, so see the Fritzing file for details.  The
+  330K resistor is a carry-over from the Neopixel docs, and should probably
+  either be eliminated, or having a matching resister on the clock line.
 
 ### Developing Arduino code on Raspberry Pi
 
